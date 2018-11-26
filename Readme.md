@@ -8,7 +8,7 @@ A Vagrant virtualbox
 Both of these environments will utilize the Lumen framework created by Laravel.
 
 ## Requirements
-I'm developing with Ubuntu 16.04 LTS, feel free to use any OS to your liking, but this guide will have linux commands, etc.
+I'm developing with Ubuntu 18.04 LTS, feel free to use any OS to your liking, but this guide will have linux commands, etc.
 Vagrant
 AWS Account
 
