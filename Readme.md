@@ -275,23 +275,23 @@ sudo ln -s /usr/local/bin/composer /usr/bin/composer
 
 ### Setup Lumen
 Like any framework, we have a set of requirements that we need to fulfill to properly utilize it. We will be following the lumen installation guide. The following command will give us those requirements:	
-<pre><code>	sudo apt-get install php7.2-dom php7.2-zip php7.2-mbstring -y</code></pre>
+<pre><code>sudo apt-get install php7.2-dom php7.2-zip php7.2-mbstring -y</code></pre>
 
 After these required packages have been installed, we need to navigate to our html directory.
-<pre><code>	cd /var/www/html </code></pre>
+<pre><code>cd /var/www/html </code></pre>
 
 Now that we're in our html directory, we can install the previously made project.
-<pre><code>	composer install</code></pre>
+<pre><code>composer install</code></pre>
 
 Now we need to grant permissions to the html directory so that we can create a new lumen installation.
-<pre><code>	sudo chmod 777 /var/www/html</code></pre>
+<pre><code>sudo chmod 777 /var/www/html</code></pre>
 
 
 Now, in your favorite web browser, connect to your host file domain name and append /public to the end of the URL. This will take you to a page that says "Lumen (5.7.6) (Laravel Components 5.7.*)"
 
 ## Allow routes
 Yes, just like EC2, we need to update Apache's sites-available files to allow other routes to exist in our local environment. 
-<pre><code>	sudo nano /etc/apache2/sites-available/000-default.conf</code></pre>
+<pre><code>sudo nano /etc/apache2/sites-available/000-default.conf</code></pre>
 (in nano)
 [update DocumentRoot to /var/www/html/public instead of /var/www/html]
 (go to the end of the document)
@@ -299,7 +299,7 @@ Yes, just like EC2, we need to update Apache's sites-available files to allow ot
 &lt;Directory /var/www/html/public&gt;
   Options Indexes FollowSymLinks
   AllowOverride All
-	Require all granted
+  Require all granted
 &lt;/Directory&gt;
 </code></pre>
 
