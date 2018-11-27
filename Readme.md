@@ -205,7 +205,7 @@ Just like our EC2 Instance, we need to install php7.2 to fulfill the P in LAMP.
 
 ### Install mysql
 PHP has been installed, and we just have to install mysql now.
-<pre><code>	sudo apt-get install mysql-server php7.2-mysql -y</code></pre>
+<pre><code>sudo apt-get install mysql-server php7.2-mysql -y</code></pre>
 
 Just like on EC2, we need to modify the mysqld.conf
 <pre><code>sudo nano /etc/mysql/mysql.conf.d/mysqld.conf
@@ -217,7 +217,7 @@ Ctrl+W bind-address
 </code></pre>
 
 For safety's sake we should run the secure installation for mysql.
-<pre><code>	sudo mysql_secure_installation</code></pre>
+<pre><code>sudo mysql_secure_installation</code></pre>
 
 Now we should restart Apache and MySQL
 <pre><code>
