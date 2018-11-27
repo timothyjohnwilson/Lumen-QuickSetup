@@ -291,7 +291,7 @@ Now, in your favorite web browser, connect to your host file domain name and app
 
 ## Allow routes
 Yes, just like EC2, we need to update Apache's sites-available files to allow other routes to exist in our local environment. 
-<pre><code>sudo nano /etc/apache2/sites-available/000-default.conf</code></pre>
+<pre><code>sudo nano /etc/apache2/sites-available/000-default.conf
 (in nano)
 [update DocumentRoot to /var/www/html/public instead of /var/www/html]
 (go to the end of the document)
